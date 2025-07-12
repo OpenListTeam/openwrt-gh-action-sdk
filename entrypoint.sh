@@ -66,7 +66,7 @@ endgroup
 group "golang 1.24.x"
 # golang 1.24.x
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+git clone https://github.com/OpenListTeam/packages_lang_golang -b 24.x feeds/packages/lang/golang
 # hack xdp
 sed -i '/KERNEL_XDP_SOCKETS/d' package/kernel/linux/modules/netsupport.mk
 sed -i 's/xsk_diag\.ko/xsk_diag.ko@le1.0/g' package/kernel/linux/modules/netsupport.mk
