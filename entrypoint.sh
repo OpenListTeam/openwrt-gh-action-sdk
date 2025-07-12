@@ -66,7 +66,7 @@ endgroup
 group "golang 1.23.x"
 # golang 1.23.x
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+git clone https://github.com/OpenListTeam/packages_lang_golang -b 23.x feeds/packages/lang/golang
 # nodejs prebuilt
 rm -rf feeds/packages/lang/node
 feeds_version=$(cat feeds.conf | head -1 | awk -Fopenwrt- '{print $2}')
